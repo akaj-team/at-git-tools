@@ -13,6 +13,8 @@ function getUsersApi(orgName, token, cursor, onFinish) {
   var endCursor = ""
   if (cursor) {
     endCursor = `, after:"${cursor}"`
+  } else {
+    users = []
   }
   var options = {
     uri: 'https://api.github.com/graphql',
@@ -23,7 +25,7 @@ function getUsersApi(orgName, token, cursor, onFinish) {
     },
     json: {
       "query": `{
-                  organization(login: "akaj-team") {
+                  organization(login: "${orgName}") {
                     members(first: 100${endCursor}) {
                       pageInfo {
                         hasNextPage

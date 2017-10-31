@@ -1,5 +1,5 @@
 var fs = require('fs')
-var configs = JSON.parse(fs.readFileSync('./at-git-configs.json', 'utf8'))
+var configs = JSON.parse(fs.readFileSync(__dirname + '/../at-git-configs.json', 'utf8'))
 var excepts = null
 if (configs.excepts) {
   excepts = configs.excepts
@@ -47,7 +47,7 @@ module.exports = {
     if (except.indexOf(value) >= 0 || re.test(value)) {
       return true
     }
-    console.log(`Tên hiển thị '${value}' chưa đúng.`);
+    // console.log(`Tên hiển thị '${value}' chưa đúng.`);
     return `Tên hiển thị '${value}' chưa đúng.`;
   }
 }
