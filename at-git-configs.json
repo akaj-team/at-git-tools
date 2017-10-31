@@ -1,0 +1,7 @@
+{
+  "excepts": {
+    "email": ["toan@asiantech.vn", "hoang@asiantech.vn", "toannt2@asiantech.vn", "dev01.asiantech@gmail.com"],
+    "login": ["at-dev-support-01"],
+    "name": ["Bot"]
+  }
+}

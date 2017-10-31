@@ -1,0 +1,16 @@
+{
+  "name": "at-git-tools",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Use this tool to validate member's github accounts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tien Hoang N. <tien.hoang@asiantech.vn> (http://asiantech.vn)",
+  "license": "ISC",
+  "dependencies": {
+    "left-pad": "^1.1.3",
+    "request": "^2.83.0"
+  }
+}
