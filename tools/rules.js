@@ -49,7 +49,18 @@ module.exports = {
     }
     // console.log(`Tên hiển thị '${value}' chưa đúng.`);
     return `Tên hiển thị '${value}' chưa đúng.`;
+  },
+
+  validateNonPublicEmail: function(value) {
+    const except = getExceptList("email");
+    var re = /^$/;
+    if (except.indexOf(value) >= 0 || re.test(value)) {
+      return true
+    }
+    // console.log(`Tên hiển thị '${value}' chưa đúng.`);
+    return `Không được public email.`;
   }
+
 }
 
 

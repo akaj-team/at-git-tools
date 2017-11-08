@@ -17,7 +17,7 @@ function checkUser(user) {
     {
       name: 'email',
       value: user.email,
-      rules: [rules.validateEmailFormat, rules.validateEmailAt]
+      rules: [rules.validateNonPublicEmail]
     }, {
       name: 'login',
       value: user.login,
