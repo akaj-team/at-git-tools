@@ -39,11 +39,11 @@ module.exports = {
       return true
     }
     return `Tên công ty '${value}' chưa đúng.`;
-  },
+},
 
   validateDisplayName: function(value) {
     const except = getExceptList("name");
-    var re = /^(\b[A-Z][a-z]*\s*)+(\b[A-Z].\s*)+$/;
+    var re = /^(\b[A-Z][a-z]+\s*){2,}(\b[A-Z]\.\s*)+$|^(\b[A-Z][a-z]+\s*){2}$/;
     if (except.indexOf(value) >= 0 || re.test(value)) {
       return true
     }

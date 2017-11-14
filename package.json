@@ -1,6 +1,6 @@
 {
   "name": "at-git-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "Use this tool to validate member's github accounts",
   "main": "index.js",
