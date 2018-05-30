@@ -43,7 +43,7 @@ module.exports = {
 
   validateDisplayName: function(value) {
     const except = getExceptList("name");
-    var re = /^(\b[A-Z][a-z]+\s*){2,}(\b[A-Z]\.\s*)+$|^(\b[A-Z][a-z]+\s*){2}$/;
+    var re = /^(\b[A-Z][a-z]*\s*){2,}(\b[A-Z]\.\s*)+$|^(\b[A-Z][a-z]+\s*){2}$/;
     if (except.indexOf(value) >= 0 || re.test(value)) {
       return true
     }
