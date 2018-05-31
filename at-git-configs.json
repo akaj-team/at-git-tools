@@ -1,7 +1,7 @@
 {
   "excepts": {
     "email": ["toan@asiantech.vn", "hoang@asiantech.vn", "toannt2@asiantech.vn", "dev01.asiantech@gmail.com", "ios.support@asiantech.vn"],
-    "login": ["at-dev-support-01", "asiantechvn", "at-ios-support", "at-fe-support", "at-nhan-tran"],
+    "login": ["at-dev-support-01", "asiantechvn", "at-ios-support", "at-fe-support", "at-nhan-tran", "at-linhnguyen-2"],
     "name": ["Bot", "asiantechvn", "AT iOS Support", "CI BOT", "AT Front End"]
   }
 }
